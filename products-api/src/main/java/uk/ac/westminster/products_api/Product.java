@@ -1,9 +1,12 @@
 package uk.ac.westminster.products_api;
 
 public class Product {
-    public Long id;
-    public String name;
-    public double price;
+    private Long id;
+    private String name;
+    private double price;
+
+    //Add this no argument constructor
+    public Product() {}
 
     //Adding the constructor
     public Product(Long id,String name,double price) {
@@ -11,4 +14,10 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+
+    //Adding getters question number 18 answers
+    public long getId() { return id; }
+    public String getName() { return name; }
+    public double getPrice() { return price; }
+
 }
